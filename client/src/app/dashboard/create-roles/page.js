@@ -142,7 +142,6 @@ export default function Page() {
         </select>
       </div>
 
-      {/* Submit Button */}
       <div>
         <button
           type="submit"
