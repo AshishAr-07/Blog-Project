@@ -6,7 +6,6 @@ import BlogRoutes from './router/BlogRoutes.js';
 import cors from "cors";
 const app = express();
 
-// Add middleware
 app.use(cors()); 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
