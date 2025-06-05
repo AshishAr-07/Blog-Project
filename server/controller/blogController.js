@@ -92,7 +92,7 @@ export const getSingleBlogController = async (req, res) => {
   }
 };
 
-// Delete Blog
+// Delete Blog Controller
 export const deleteBlogController = async (req, res) => {
   try {
     const { id } = req.params;
@@ -111,7 +111,7 @@ export const deleteBlogController = async (req, res) => {
   }
 };
 
-// Update Blog
+// Update Blog Controller 
 export const updateBlogController = async (req, res) => {
   try {
     const { title, shortdescription, description, category } = req.fields;
