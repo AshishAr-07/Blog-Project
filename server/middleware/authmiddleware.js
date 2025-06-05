@@ -25,7 +25,7 @@ export const isAdmin = async (req, res, next) => {
         message: "Unauthorized access",
       });
     }
-    next(); // Proceed only if user is admin
+    next();
   } catch (error) {
     console.log(error);
     res.status(401).send({
