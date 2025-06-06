@@ -66,7 +66,7 @@ export const singleCategoryController = async (req, res) => {
     const category = await CategorySchema.findOne({ slug: slug });
     res.status(200).send({
       success: true,
-      message: "Single Category Fetched Successfully",
+      message: "Category Fetched Successfully",
       category,
     });
   } catch (error) {
