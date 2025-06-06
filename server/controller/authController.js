@@ -84,7 +84,7 @@ export const loginuser = async (req, res) => {
 };
 
 
-// All USers
+// All Users Controller
 export const getAlllUSers = async (req,res) => {
   try {
     const users = await UserSchema.find({}).select("-password");
@@ -94,7 +94,7 @@ export const getAlllUSers = async (req,res) => {
   }
 }
 
-// Delete User
+// Delete User Controller
 export const deleteUser = async (req,res) => {
   try {
     const { id } = req.params;
