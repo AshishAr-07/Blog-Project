@@ -34,7 +34,7 @@ export const createCategoryController = async (req, res) => {
   }
 };
 
-// update category
+// update category controller
 export const updateCategoryController = async (req, res) => {
   try {
     const { name } = req.body;
@@ -79,7 +79,7 @@ export const singleCategoryController = async (req, res) => {
   }
 };
 
-// Get All Categories
+// Get All Categories Controller
 export const allCategoryController = async (req, res) => {
   try {
     const category = await CategorySchema.find({});
