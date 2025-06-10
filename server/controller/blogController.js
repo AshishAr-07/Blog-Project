@@ -46,7 +46,7 @@ export const createBlogController = async (req, res) => {
   }
 };
 
-// Get All Blogs
+// Get All Blogs Controller
 export const getAllBlogsController = async (req, res) => {
   try {
     const blogs = await BlogSchema.find({})
@@ -71,7 +71,7 @@ export const getAllBlogsController = async (req, res) => {
   }
 };
 
-// Get Single Blog
+// Single Blog Controller
 export const getSingleBlogController = async (req, res) => {
   try {
     const blog = await BlogSchema.findOne({ slug: req.params.slug }).populate(
